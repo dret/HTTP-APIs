@@ -1,2 +1,1 @@
-# HTTP-APIs
-Building Blocks for HTTP APIs
+# Building Blocks for HTTP APIs
