@@ -12,11 +12,11 @@
             <xsl:for-each select="videos/video[@published]">
                 <xsl:text>- [</xsl:text>
                 <xsl:value-of select="title"/>
-                <xsl:text> (</xsl:text>
-                <xsl:value-of select="tagline"/>
-                <xsl:text>)](</xsl:text>
+                <xsl:text>](</xsl:text>
                 <xsl:value-of select="@slug"/>
-                <xsl:text>) (</xsl:text>
+                <xsl:text> "</xsl:text>
+                <xsl:value-of select="replace(tagline, '&quot;', '&amp;#34;')"/>
+                <xsl:text>") (</xsl:text>
                 <xsl:value-of select="format-date(@published, '[M] [D], [Y]')"/>
                 <xsl:text>)</xsl:text>
             </xsl:for-each>
