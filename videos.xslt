@@ -18,7 +18,7 @@
                 <xsl:value-of select="replace(tagline, '&quot;', '&amp;#34;')"/>
                 <xsl:text>") (</xsl:text>
                 <xsl:value-of select="format-date(@published, '[M] [D], [Y]')"/>
-                <xsl:text>)</xsl:text>
+                <xsl:text>)&#xa;</xsl:text>
             </xsl:for-each>
         </xsl:result-document>
         <xsl:for-each select="videos/video[@published]">
@@ -28,6 +28,18 @@
                 <xsl:value-of select="concat('title:       &quot;', title, '&quot;&#xa;')"/>
                 <xsl:value-of select="concat('description: &quot;', tagline, '&quot;&#xa;')"/>
                 <xsl:text>---&#xa;&#xa;</xsl:text>
+                <xsl:value-of select="description"/>
+                <xsl:text>&#xa;&#xa;</xsl:text>
+                <xsl:if test="exists(resources/*)">
+                    <xsl:text>### Additional Resources:&#xa;&#xa;</xsl:text>
+                    <xsl:for-each select="resources/resource">
+                        <xsl:text>- [</xsl:text>
+                        <xsl:value-of select="@title"/>
+                        <xsl:text>](</xsl:text>
+                        <xsl:value-of select="@href"/>
+                        <xsl:text>)&#xa;</xsl:text>
+                    </xsl:for-each>
+                </xsl:if>
             </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
