@@ -17,7 +17,7 @@
                 <xsl:text> "</xsl:text>
                 <xsl:value-of select="replace(tagline, '&quot;', '&amp;#34;')"/>
                 <xsl:text>") (</xsl:text>
-                <xsl:value-of select="format-date(@published, '[M] [D], [Y]')"/>
+                <xsl:value-of select="format-date(@published, '[MNn] [D], [Y]')"/>
                 <xsl:text>)&#xa;</xsl:text>
             </xsl:for-each>
         </xsl:result-document>
