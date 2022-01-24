@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="videos.xslt"?>
+<videos>
+    <video published="2022-01-24" slug="rfc-8594-sunset">
+        <title>Sunset</title>
+        <tagline>It's great!</tagline>
+        <link type="youtube" id="XXX"/>
+        <description>Really! It is!</description>
+        <resources>Yes!</resources>
+    </video>
+</videos>
