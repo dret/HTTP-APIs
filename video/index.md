@@ -4,4 +4,4 @@ title:       "Video Overview"
 description: "List of all 'Building Blocks for HTTP APIs' videos"
 ---
 
-- [Sunset (It's great!)](rfc-8594-sunset)
+- [The Sunset HTTP Header Field (Resources and APIs disappear at some point in time; the Sunset field allows to advertise that event to clients.)](rfc-8594-sunset)
