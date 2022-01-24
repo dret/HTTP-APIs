@@ -3,8 +3,24 @@
     <xsl:output name="markdown" method="text" encoding="UTF-8"/>
     <xsl:output name="markup" method="xhtml" encoding="UTF-8" omit-xml-declaration="yes"/>
     <xsl:template match="/">
+        <xsl:result-document href="video/index.md" format="markdown">
+            <xsl:text>---&#xa;</xsl:text>
+            <xsl:text>layout:      page&#xa;</xsl:text>
+            <xsl:text>title:       "Video Overview"&#xa;</xsl:text>
+            <xsl:text>description: "List of all 'Building Blocks for HTTP APIs' videos"&#xa;</xsl:text>
+            <xsl:text>---&#xa;&#xa;</xsl:text>
+            <xsl:for-each select="videos/video[@published]">
+                <xsl:text>- [</xsl:text>
+                <xsl:value-of select="title"/>
+                <xsl:text> (</xsl:text>
+                <xsl:value-of select="tagline"/>
+                <xsl:text>)](</xsl:text>
+                <xsl:value-of select="@slug"/>
+                <xsl:text>)</xsl:text>
+            </xsl:for-each>
+        </xsl:result-document>
         <xsl:for-each select="videos/video[@published]">
-            <xsl:result-document href="_includes/video/{@slug}.md" format="markdown">
+            <xsl:result-document href="video/{@slug}.md" format="markdown">
                 <xsl:text>---&#xa;</xsl:text>
                 <xsl:text>layout:      video&#xa;</xsl:text>
                 <xsl:value-of select="concat('title:       &quot;', title, '&quot;&#xa;')"/>
