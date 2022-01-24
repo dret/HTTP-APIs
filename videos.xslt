@@ -16,6 +16,8 @@
                 <xsl:value-of select="tagline"/>
                 <xsl:text>)](</xsl:text>
                 <xsl:value-of select="@slug"/>
+                <xsl:text>) (</xsl:text>
+                <xsl:value-of select="format-date(@published, '[M] [D], [Y]')"/>
                 <xsl:text>)</xsl:text>
             </xsl:for-each>
         </xsl:result-document>
