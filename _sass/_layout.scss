@@ -213,6 +213,16 @@
     }
 }
 
+.post-subtitle {
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 20px;
+    }
+}
+
 .post-content {
     margin-bottom: $spacing-unit;
 
