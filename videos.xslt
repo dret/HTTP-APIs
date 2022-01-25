@@ -30,6 +30,11 @@
                 <xsl:text>---&#xa;&#xa;</xsl:text>
                 <xsl:value-of select="description"/>
                 <xsl:text>&#xa;&#xa;</xsl:text>
+                <xsl:if test="link[@type = 'youtube']">
+                    <xsl:text>&lt;div class="ytcontainer">&#xa;  &lt;iframe class="yt" allowfullscreen="" src="https://www.youtube.com/embed/</xsl:text>
+                    <xsl:value-of select="link[@type = 'youtube']/@id"/>
+                    <xsl:text>">&lt;/iframe>&#xa;&lt;/div>&#xa;&#xa;</xsl:text>
+                </xsl:if>
                 <xsl:if test="exists(resources/*)">
                     <xsl:text>### Additional Resources:&#xa;&#xa;</xsl:text>
                     <xsl:for-each select="resources/resource">

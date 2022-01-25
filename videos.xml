@@ -4,7 +4,7 @@
     <video published="2022-01-24" slug="rfc-8594-sunset">
         <title>The Sunset HTTP Header Field</title>
         <tagline>Resources and APIs disappear at some point in time; the Sunset field allows to advertise that event to clients.</tagline>
-        <link type="youtube" id="XXX"/>
+        <link type="youtube" id="twfufQn1mD0"/>
         <description>When a resource or an API is about to be retired, it would be useful for consumers of that resource/API to be notified in advance. By using an HTTP field, this information can be conveyed in-band, instead of having to rely on out-of-band channels such as announcements that are published on Web pages or sent by email.</description>
         <resources>
             <resource title='RFC 8594, "The Sunset HTTP Header Field", May 2019' href="https://datatracker.ietf.org/doc/html/rfc8594"/>

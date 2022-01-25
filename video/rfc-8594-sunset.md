@@ -6,6 +6,10 @@ description: "Resources and APIs disappear at some point in time; the Sunset fie
 
 When a resource or an API is about to be retired, it would be useful for consumers of that resource/API to be notified in advance. By using an HTTP field, this information can be conveyed in-band, instead of having to rely on out-of-band channels such as announcements that are published on Web pages or sent by email.
 
+<div class="ytcontainer">
+  <iframe class="yt" allowfullscreen="" src="https://www.youtube.com/embed/twfufQn1mD0"></iframe>
+</div>
+
 ### Additional Resources:
 
 - [RFC 8594, "The Sunset HTTP Header Field", May 2019](https://datatracker.ietf.org/doc/html/rfc8594)
