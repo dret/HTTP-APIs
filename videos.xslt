@@ -38,7 +38,7 @@
                 </xsl:if>
                 <xsl:if test="exists(additional/*)">
                     <xsl:text>### Additional Resources:&#xa;&#xa;</xsl:text>
-                    <xsl:for-each select="resources/resource">
+                    <xsl:for-each select="additional/resource">
                         <xsl:text>- [</xsl:text>
                         <xsl:value-of select="@title"/>
                         <xsl:text>](</xsl:text>

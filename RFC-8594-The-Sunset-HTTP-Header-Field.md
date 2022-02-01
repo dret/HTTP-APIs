@@ -14,3 +14,4 @@ When a resource or an API is about to be retired, it would be useful for consume
 
 ### Additional Resources:
 
+- ["API Lifecycle Management: Deprecation and Sunsetting", YouTube, November 2020](https://www.youtube.com/watch?v=twfufQn1mD0)
