@@ -28,6 +28,7 @@
                 <xsl:value-of select="concat('title:       &quot;', title, '&quot;&#xa;')"/>
                 <xsl:value-of select="concat('description: &quot;', tagline, '&quot;&#xa;')"/>
                 <xsl:text>---&#xa;&#xa;</xsl:text>
+                <xsl:value-of select="concat('# [', resource/@title, '](', resource/@href, ')&#xa;&#xa;')"/>
                 <xsl:value-of select="description"/>
                 <xsl:text>&#xa;&#xa;</xsl:text>
                 <xsl:if test="link[@type = 'youtube']">
@@ -35,7 +36,7 @@
                     <xsl:value-of select="link[@type = 'youtube']/@id"/>
                     <xsl:text>">&lt;/iframe>&#xa;&lt;/div>&#xa;&#xa;</xsl:text>
                 </xsl:if>
-                <xsl:if test="exists(resources/*)">
+                <xsl:if test="exists(additional/*)">
                     <xsl:text>### Additional Resources:&#xa;&#xa;</xsl:text>
                     <xsl:for-each select="resources/resource">
                         <xsl:text>- [</xsl:text>
