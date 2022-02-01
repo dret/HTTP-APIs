@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="videos.xslt"?>
 <videos>
-    <video published="2022-01-24" slug="rfc-8594-sunset">
+    <video published="2022-01-24" slug="RFC-8594-The-Sunset-HTTP-Header-Field">
         <title>The Sunset HTTP Header Field</title>
         <resource title='RFC 8594, "The Sunset HTTP Header Field", May 2019' href="https://datatracker.ietf.org/doc/html/rfc8594"/>
         <tagline>Resources and APIs disappear at some point in time; the Sunset field allows to advertise that event to clients.</tagline>
