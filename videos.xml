@@ -11,4 +11,14 @@
             <resource title='"API Lifecycle Management: Deprecation and Sunsetting", YouTube, November 2020' href="https://www.youtube.com/watch?v=twfufQn1mD0"/>
         </additional>
     </video>
+    <video published="2022-02-04" slug="RFC-7807-Problem-Details-for-HTTP-APIs">
+        <title>Problem Details for HTTP APIs</title>
+        <resource title='RFC 7807, "Problem Details for HTTP APIs", March 2016' href="https://datatracker.ietf.org/doc/html/rfc8594"/>
+        <tagline>Reporting problem information beyond the HTTP status code is useful in many API designs.</tagline>
+        <link type="youtube" id="UNdUjBqsUqg"/>
+        <description>HTTP has no standard way of communication problem reports or error messages other than the HTTP status code. Many APIs would like to include additional information in their problem reports or error messages so that clients have a better way of understanding what kind of problem or error occurred. By using a specific media type for communicating these conditions, API designers can use an existing format and API consumers can depend on a format that they know.</description>
+        <additional>
+            <resource title='"Representing Problem Details in HTTP APIs: An Introduction to RFC 7807", YouTube, June 2021' href="https://www.youtube.com/watch?v=UNdUjBqsUqg"/>
+        </additional>
+    </video>
 </videos>
