@@ -21,4 +21,14 @@
             <resource title='"Representing Problem Details in HTTP APIs: An Introduction to RFC 7807", YouTube, June 2021' href="https://www.youtube.com/watch?v=UNdUjBqsUqg"/>
         </additional>
     </video>
+    <video published="2022-02-05" slug="RFC-8288-Web-Linking">
+        <title>Web Linking</title>
+        <resource title='RFC 8288, "Web Linking", October 2017' href="https://datatracker.ietf.org/doc/html/rfc8288"/>
+        <tagline>Supporting the representation of typed links in HTTP.</tagline>
+        <link type="youtube" id="TpVsg2Nz_38"/>
+        <description>Many APIs take advantage of links as an important way to relate resources and to guide interactions with the API. For links to be meaningful they must have a type associated with them, so that clients can understand what links represent, and can choose which links to follow. Web linking introduces the idea of a general mechanism for link types, establishes a registry of types so that types can be reused, and it also defines a way how links can be represented in an HTTP field.</description>
+        <additional>
+            <resource title='"Handling Errors on the Web: Schrödinger&apos;s Links and how to handle them", YouTube, May 2021' href="https://www.youtube.com/watch?v=TpVsg2Nz_38"/>
+        </additional>
+    </video>
 </videos>
