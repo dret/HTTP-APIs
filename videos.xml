@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="videos.xslt"?>
+<!DOCTYPE videos SYSTEM "videos.dtd">
 <videos>
     <video published="2022-01-24" slug="RFC-8594-The-Sunset-HTTP-Header-Field" webconcepts="rfc8594.xml">
         <title>The Sunset HTTP Header Field</title>

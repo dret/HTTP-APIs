@@ -1,0 +1,29 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT videos (video)+>
+<!ELEMENT video (title,(resource,tagline,link,description)?,
+                 (summary,tour,history,example-short,example-api)?,
+                 additional?)>
+<!ATTLIST video
+  published CDATA #IMPLIED
+  slug CDATA #IMPLIED
+  webconcepts CDATA #IMPLIED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT tagline (#PCDATA)>
+<!ELEMENT link EMPTY>
+<!ATTLIST link
+  id CDATA #REQUIRED
+  type CDATA #REQUIRED>
+
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT tour (#PCDATA)>
+<!ELEMENT history (#PCDATA)>
+<!ELEMENT example-short (#PCDATA)>
+<!ELEMENT example-api (#PCDATA)>
+<!ELEMENT additional (resource)>
+<!ELEMENT resource EMPTY>
+<!ATTLIST resource
+  href CDATA #REQUIRED
+  title CDATA #REQUIRED>
