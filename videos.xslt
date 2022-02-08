@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0">
+    <xsl:output name="plain" method="text" encoding="UTF-8"/>
     <xsl:output name="markdown" method="text" encoding="UTF-8"/>
     <xsl:output name="markup" method="xhtml" encoding="UTF-8" omit-xml-declaration="yes"/>
     <xsl:variable name="youtube-prefix" select="'https://www.youtube.com/watch?v='"/>
@@ -50,6 +51,16 @@
                 </xsl:if>
             </xsl:result-document>
         </xsl:for-each>
+        <xsl:result-document href="{$assets}episodes.txt" format="plain">
+            <xsl:for-each select="videos/video">
+                <xsl:text>- </xsl:text>
+                <xsl:value-of select="title"/>
+                <xsl:text>: </xsl:text>
+                <xsl:value-of select="$youtube-prefix"/>
+                <xsl:value-of select="link[@type='youtube']/@id"/>
+                <xsl:text>&#xa;</xsl:text>
+            </xsl:for-each>
+        </xsl:result-document>
         <xsl:result-document href="{$assets}episodes.md" format="markdown">
             <xsl:for-each select="videos/video">
                 <xsl:text>- [</xsl:text>
