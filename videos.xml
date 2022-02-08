@@ -31,4 +31,46 @@
             <resource title='"Handling Errors on the Web: Schrödinger&apos;s Links and how to handle them", YouTube, May 2021' href="https://www.youtube.com/watch?v=TpVsg2Nz_38"/>
         </additional>
     </video>
+    <video>
+        <title>HTTP History</title>
+    </video>
+    <video>
+        <title>HTTP/1.1 Specification History</title>
+    </video>
+    <video>
+        <title>HTTP Syntax and Semantics</title>
+    </video>
+    <video>
+        <title>HTTP Conditional Requests</title>
+    </video>
+    <video>
+        <title>HTTP Range Requests</title>
+    </video>
+    <video>
+        <title>HTTP Caching</title>
+    </video>
+    <video>
+        <title>HTTP Authentication</title>
+    </video>
+    <video>
+        <title>HTTP Structured Headers</title>
+    </video>
+    <video>
+        <title>HTTP SEARCH</title>
+    </video>
+    <video>
+        <title>HTTP/2</title>
+    </video>
+    <video>
+        <title>HTTP/3</title>
+    </video>
+    <video>
+        <title>Problem Details</title>
+    </video>
+    <video>
+        <title>Web Linking</title>
+    </video>
+    <video>
+        <title>Linksets</title>
+    </video>
 </videos>

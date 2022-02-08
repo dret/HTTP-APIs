@@ -1,3 +1,17 @@
 - The Sunset HTTP Header Field: https://www.youtube.com/watch?v=twfufQn1mD0
 - Problem Details for HTTP APIs: https://www.youtube.com/watch?v=UNdUjBqsUqg
 - Web Linking: https://www.youtube.com/watch?v=TpVsg2Nz_38
+- HTTP History
+- HTTP/1.1 Specification History
+- HTTP Syntax and Semantics
+- HTTP Conditional Requests
+- HTTP Range Requests
+- HTTP Caching
+- HTTP Authentication
+- HTTP Structured Headers
+- HTTP SEARCH
+- HTTP/2
+- HTTP/3
+- Problem Details
+- Web Linking
+- Linksets

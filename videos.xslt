@@ -55,20 +55,31 @@
             <xsl:for-each select="videos/video">
                 <xsl:text>- </xsl:text>
                 <xsl:value-of select="title"/>
-                <xsl:text>: </xsl:text>
-                <xsl:value-of select="$youtube-prefix"/>
-                <xsl:value-of select="link[@type='youtube']/@id"/>
+                <xsl:if test="exists(link[@type='youtube'])">
+                    <xsl:text>: </xsl:text>
+                    <xsl:value-of select="$youtube-prefix"/>
+                    <xsl:value-of select="link[@type='youtube']/@id"/>
+                </xsl:if>
                 <xsl:text>&#xa;</xsl:text>
             </xsl:for-each>
         </xsl:result-document>
         <xsl:result-document href="{$assets}episodes.md" format="markdown">
             <xsl:for-each select="videos/video">
-                <xsl:text>- [</xsl:text>
-                <xsl:value-of select="title"/>
-                <xsl:text>](</xsl:text>
-                <xsl:value-of select="$youtube-prefix"/>
-                <xsl:value-of select="link[@type='youtube']/@id"/>
-                <xsl:text>)&#xa;</xsl:text>
+                <xsl:text>- </xsl:text>
+                <xsl:choose>
+                    <xsl:when test="exists(link[@type='youtube'])">
+                        <xsl:text>[</xsl:text>
+                        <xsl:value-of select="title"/>
+                        <xsl:text>](</xsl:text>
+                        <xsl:value-of select="$youtube-prefix"/>
+                        <xsl:value-of select="link[@type='youtube']/@id"/>
+                        <xsl:text>)</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="title"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:text>&#xa;</xsl:text>
             </xsl:for-each>
         </xsl:result-document>
     </xsl:template>
