@@ -32,7 +32,7 @@
                 <xsl:value-of select="concat('description: &quot;', tagline, '&quot;&#xa;')"/>
                 <xsl:text>---&#xa;&#xa;</xsl:text>
                 <xsl:value-of select="concat('# [', resource/@title, '](', resource/@href, ')&#xa;&#xa;')"/>
-                <xsl:value-of select="description"/>
+                <xsl:value-of select="why"/>
                 <xsl:text>&#xa;&#xa;</xsl:text>
                 <xsl:if test="link[@type = 'youtube']">
                     <xsl:text>&lt;div class="ytcontainer">&#xa;  &lt;iframe class="yt" allowfullscreen="" src="https://www.youtube.com/embed/</xsl:text>
