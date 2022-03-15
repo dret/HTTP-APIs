@@ -22,7 +22,7 @@
 <!ELEMENT history (#PCDATA)>
 <!ELEMENT example-short (#PCDATA)>
 <!ELEMENT example-api (#PCDATA)>
-<!ELEMENT additional (resource)>
+<!ELEMENT additional (resource+)>
 <!ELEMENT resource EMPTY>
 <!ATTLIST resource
   href CDATA #REQUIRED

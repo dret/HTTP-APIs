@@ -1,6 +1,7 @@
 - [The Sunset HTTP Header Field](https://www.youtube.com/watch?v=twfufQn1mD0)
 - [Problem Details for HTTP APIs](https://www.youtube.com/watch?v=UNdUjBqsUqg)
 - [Web Linking](https://www.youtube.com/watch?v=TpVsg2Nz_38)
+- [Item and Collection Link Relations](https://www.youtube.com/watch?v=TpVsg2Nz_38)
 - HTTP History
 - HTTP/1.1 Specification History
 - HTTP Syntax and Semantics
@@ -15,4 +16,3 @@
 - Problem Details
 - Web Linking
 - Linksets
-- URI Design and Ownership
