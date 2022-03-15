@@ -37,6 +37,22 @@
             <resource title='"Handling Errors on the Web: Schrödinger&apos;s Links and how to handle them", YouTube, May 2021' href="https://www.youtube.com/watch?v=TpVsg2Nz_38"/>
         </additional>
     </video>
+    <video published="2022-03-14" slug="rfc-6573-Item-And-Collection-Link-Relations">
+        <title>Item and Collection Link Relations</title>
+        <resource title='RFC 6573, "Item and Collection Link Relations", April 2012' href="https://datatracker.ietf.org/doc/html/rfc6573" />
+        <tagline>
+        Defines a pair of reciprocal link relation types that may be used to express the relationship between a collection and its members.
+        </tagline>
+        <link type="youtube" id="TpVsg2Nz_38"/>
+        <why>
+Link relation values can be used to indicate _why_ an application would active a link or form. RFC6573 defines two possible reasons for activating (or following) links: to reach a `collection` or to view an `item` in a collection. Response representations that include these link relation values are identifying which links return collections and which links return items from a collection.
+        </why>
+        <additional>
+            <resource title="The Item and Collection Link Relations" href="https://webconcepts.info/specs/IETF/RFC/6573.html" />
+            <resource title="Link Relation: Collection" href="https://webconcepts.info/concepts/link-relation/collection" />
+            <resource title="Link Relation: Item" href="https://webconcepts.info/concepts/link-relation/item" />
+        </additional>  
+    </video>      
     <video>
         <title>HTTP History</title>
     </video>
