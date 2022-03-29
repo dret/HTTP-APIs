@@ -1,7 +1,7 @@
 <?xml encoding="UTF-8"?>
 
 <!ELEMENT videos (video)+>
-<!ELEMENT video (title,resource,tagline,link,why,summary,tour,history,example-short,example-api,additional?)>
+<!ELEMENT video (title,resource,tagline,link,why,summary,tour,history,example-short?,example-api?,additional?)>
 <!ATTLIST video
   published CDATA #IMPLIED
   slug CDATA #IMPLIED
