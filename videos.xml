@@ -43,6 +43,38 @@
         <tagline>Defines a pair of reciprocal link relation types that may be used to express the relationship between a collection and its members.</tagline>
         <link type="youtube" id="TpVsg2Nz_38"/>
         <why>Link relation values can be used to indicate _why_ an application would active a link or form. RFC 6573 defines two possible reasons for activating (or following) links: to reach a `collection` or to view an `item` in a collection. Response representations that include these link relation values are identifying which links return collections and which links return items from a collection.</why>
+        <summary>
+          This specification relies on RFC5988 which standardized a means of indicating the relationships between resources on the Web. This doc (RFC6573) defines a pair of reciprocal link relation types that may be used to express the relationship between a collection and its members. These link relation types can be applied to a wide range of use cases across multiple media types.
+        </summary>
+        <tour>
+          This is a pretty simple specification. It contains a short introduction (Section 1) followed by the Link Relations section (Sec. 2) which defines the item and collection link relation values. Section 3, the IANA Considerations section, covers the details of the IANA registration of the two values (item and collection). Sections 4 and 5 cover the security and internationalisation considerations, respectively. There is a short References section (Sec 6) along with an Acknowledgements appendix.
+        </tour>
+        <history>
+          RFC6573 is an informational specification that was published in April of 2012. The first draft of the specification was posted in August of 2011. The specification is stable and currently no revision is planned.
+        </history>
+        <example-short>
+          Sections 2.1 (item) and 2.2 (collection) show examples of how the apply the link relation values to HTML anchor tags and HTTP Link headers.  In the case of the link header field, it looks like this:
+<![CDATA[
+Link: <...>; rel="collection"; title="Return to Product Group X"
+Link: <...>; rel="item"; title="View Product X001"
+Link: <...>; rel="item"; title="View Product X002"
+]]>
+        </example-short>
+        <example-api>
+          A more complete example (taken from the specification document) shows the use of the collection and item link relation values within the document body (in this case HTML):
+<![CDATA[
+<html>
+  ...
+    <h1>Product Group X Listing</h1>
+    ...
+    <a href="..." rel="collection">Return to Product Group X</a>
+    
+    <a href="..." rel="item">View Product X001</a>
+    <a href="..." rel="item">View Product X002</a>
+  ...
+</html>
+]]>
+        </example-api>
         <additional>
             <resource title="The Item and Collection Link Relations" href="https://webconcepts.info/specs/IETF/RFC/6573.html" />
             <resource title="Link Relation: Collection" href="https://webconcepts.info/concepts/link-relation/collection" />
