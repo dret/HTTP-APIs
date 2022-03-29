@@ -11,8 +11,12 @@
         <summary>RFC 8594 defines the HTTP field "Sunset" which is used to advertise the timestamp when a resource/API will become unavailable. Providers can use this field to advertise the sunset when it is known. Consumers can use the field to react to such an advertisement, for example by raising alarms or by writing information to a log.</summary>
         <tour>This is a very simple specification. It starts by listing a few use cases, and then introduces and defines the "Sunset" HTTP field. It discusses caching implications as well as how the scope can be defined to apply only to one resource, or to a bigger scope (such as all resourced provided through an API). The specification also defines a link relation type which can be used to link to information about a resource's or API's sunset policy and usage.</tour>
         <history>RFC 8594 was published as a RFC in May 2019. Development of the draft started in August 2015. The specification is stable and currently no revision is planned.</history>
-        <example-short>Section 3 of RFC 8594 shows a simple example of how the "Sunset" field can be used. If this header appears in an HTTP response, a consuming application can do whatever has been implemented to deal with an upcoming sunset of a resource or API.</example-short>
-        <example-api>In an API, the main question is scope: If an API is scheduled for sunsetting, does the field appear on all resources of the API, or only on select ones which then imply the bigger scope of the API? This policy should be clearly documented for the API so that consumers can adjust accordingly. The "implicit scope" option saves a bit of traffic, but means that generic software not knowing the implicit scope will not be able to understand that all resources of an API will disappear at the sunset time.</example-api>
+        <example-short>
+            <p>Section 3 of RFC 8594 shows a simple example of how the "Sunset" field can be used. If this header appears in an HTTP response, a consuming application can do whatever has been implemented to deal with an upcoming sunset of a resource or API.</p>
+        </example-short>
+        <example-api>
+            <p>In an API, the main question is scope: If an API is scheduled for sunsetting, does the field appear on all resources of the API, or only on select ones which then imply the bigger scope of the API? This policy should be clearly documented for the API so that consumers can adjust accordingly. The "implicit scope" option saves a bit of traffic, but means that generic software not knowing the implicit scope will not be able to understand that all resources of an API will disappear at the sunset time.</p>
+        </example-api>
         <additional>
             <resource title='"API Lifecycle Management: Deprecation and Sunsetting", YouTube, November 2020' href="https://www.youtube.com/watch?v=twfufQn1mD0"/>
         </additional>
@@ -53,16 +57,16 @@
           RFC6573 is an informational specification that was published in April of 2012. The first draft of the specification was posted in August of 2011. The specification is stable and currently no revision is planned.
         </history>
         <example-short>
-          Sections 2.1 (item) and 2.2 (collection) show examples of how the apply the link relation values to HTML anchor tags and HTTP Link headers.  In the case of the link header field, it looks like this:
-<![CDATA[
+            <p>Sections 2.1 (item) and 2.2 (collection) show examples of how the apply the link relation values to HTML anchor tags and HTTP Link headers. In the case of the link header field, it looks like this:</p>
+            <code><![CDATA[
 Link: <...>; rel="collection"; title="Return to Product Group X"
 Link: <...>; rel="item"; title="View Product X001"
 Link: <...>; rel="item"; title="View Product X002"
-]]>
+]]></code>
         </example-short>
         <example-api>
-          A more complete example (taken from the specification document) shows the use of the collection and item link relation values within the document body (in this case HTML):
-<![CDATA[
+            <p>A more complete example (taken from the specification document) shows the use of the collection and item link relation values within the document body (in this case HTML):</p>
+            <code><![CDATA[
 <html>
   ...
     <h1>Product Group X Listing</h1>
@@ -73,7 +77,7 @@ Link: <...>; rel="item"; title="View Product X002"
     <a href="..." rel="item">View Product X002</a>
   ...
 </html>
-]]>
+]]></code>
         </example-api>
         <additional>
             <resource title="The Item and Collection Link Relations" href="https://webconcepts.info/specs/IETF/RFC/6573.html" />

@@ -18,10 +18,12 @@
 <!ELEMENT summary (#PCDATA)>
 <!ELEMENT tour (#PCDATA)>
 <!ELEMENT history (#PCDATA)>
-<!ELEMENT example-short (#PCDATA)>
-<!ELEMENT example-api (#PCDATA)>
+<!ELEMENT example-short (p|code)+>
+<!ELEMENT example-api (p|code)+>
 <!ELEMENT additional (resource+)>
 <!ELEMENT resource EMPTY>
 <!ATTLIST resource
   href CDATA #REQUIRED
   title CDATA #REQUIRED>
+<!ELEMENT p (#PCDATA)>
+<!ELEMENT code (#PCDATA)>
