@@ -6,24 +6,14 @@
     <xsl:variable name="youtube-prefix" select="'https://www.youtube.com/watch?v='"/>
     <xsl:variable name="assets" select="'assets/'"/>
     <xsl:template match="/">
-        <xsl:result-document href="overview.md" format="markdown">
-            <xsl:text>---&#xa;</xsl:text>
-            <xsl:text>layout:      page&#xa;</xsl:text>
-            <xsl:text>title:       "Building Block Overview"&#xa;</xsl:text>
-            <xsl:text>description: "List of all Building Blocks for HTTP APIs"&#xa;</xsl:text>
-            <xsl:text>---&#xa;&#xa;</xsl:text>
-            <xsl:for-each select="videos/video[@published]">
-                <xsl:text>- [</xsl:text>
-                <xsl:value-of select="replace(title, '^\s+|\s+$', '')"/>
-                <xsl:text>](./</xsl:text>
-                <xsl:value-of select="@slug"/>
-                <xsl:text> "</xsl:text>
-                <xsl:value-of select="replace(replace(tagline, '&quot;', '&amp;#34;'), '^\s+|\s+$', '')"/>
-                <xsl:text>") (</xsl:text>
-                <xsl:value-of select="format-date(@published, '[MNn] [D], [Y]')"/>
-                <xsl:text>)&#xa;</xsl:text>
-            </xsl:for-each>
-        </xsl:result-document>
+        <xsl:call-template name="overview">
+            <xsl:with-param name="filename" select="'overview.md'"/>
+            <xsl:with-param name="videos" select="videos/video[@published]"/>
+        </xsl:call-template>
+        <xsl:call-template name="overview">
+            <xsl:with-param name="filename" select="'overview-secret.md'"/>
+            <xsl:with-param name="videos" select="videos/video"/>
+        </xsl:call-template>
         <xsl:for-each select="videos/video[@published]">
             <xsl:result-document href="{@slug}.md" format="markdown">
                 <xsl:text>---&#xa;</xsl:text>
@@ -100,5 +90,27 @@
         <xsl:text>&#xa;```&#xa;</xsl:text>
         <xsl:value-of select="replace(text(), '^\s+|\s+$', '')"/>
         <xsl:text>&#xa;```&#xa;&#xa;</xsl:text>
+    </xsl:template>
+    <xsl:template name="overview">
+        <xsl:param name="filename"/>
+        <xsl:param name="videos"/>
+        <xsl:result-document href="{$filename}" format="markdown">
+            <xsl:text>---&#xa;</xsl:text>
+            <xsl:text>layout:      page&#xa;</xsl:text>
+            <xsl:text>title:       "Building Block Overview"&#xa;</xsl:text>
+            <xsl:text>description: "List of all HTTP API Building Blocks"&#xa;</xsl:text>
+            <xsl:text>---&#xa;&#xa;</xsl:text>
+            <xsl:for-each select="$videos">
+                <xsl:text>- [</xsl:text>
+                <xsl:value-of select="replace(title, '^\s+|\s+$', '')"/>
+                <xsl:text>](./</xsl:text>
+                <xsl:value-of select="@slug"/>
+                <xsl:text> "</xsl:text>
+                <xsl:value-of select="replace(replace(tagline, '&quot;', '&amp;#34;'), '^\s+|\s+$', '')"/>
+                <xsl:text>") (</xsl:text>
+                <xsl:value-of select="format-date(@published, '[MNn] [D], [Y]')"/>
+                <xsl:text>)&#xa;</xsl:text>
+            </xsl:for-each>
+        </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>

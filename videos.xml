@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="videos.xslt"?>
 <!DOCTYPE videos SYSTEM "videos.dtd">
 <videos>
-    <video published="2022-01-24" slug="RFC-8594-The-Sunset-HTTP-Header-Field" webconcepts="rfc8594.xml">
+    <video published="2022-05-06" slug="RFC-8594-The-Sunset-HTTP-Header-Field" webconcepts="rfc8594.xml">
         <title>The Sunset HTTP Header Field</title>
         <resource title='RFC 8594, "The Sunset HTTP Header Field", May 2019' href="https://datatracker.ietf.org/doc/html/rfc8594"/>
         <tagline>Resources and APIs disappear at some point in time; the Sunset field allows to advertise that event to clients.</tagline>
@@ -21,7 +21,7 @@
             <resource title='"API Lifecycle Management: Deprecation and Sunsetting", YouTube, November 2020' href="https://www.youtube.com/watch?v=twfufQn1mD0"/>
         </additional>
     </video>
-    <video published="2022-02-04" slug="RFC-7807-Problem-Details-for-HTTP-APIs">
+    <video slug="RFC-7807-Problem-Details-for-HTTP-APIs">
         <title>Problem Details for HTTP APIs</title>
         <resource title='RFC 7807, "Problem Details for HTTP APIs", March 2016' href="https://datatracker.ietf.org/doc/html/rfc7807"/>
         <tagline>Reporting problem information beyond the HTTP status code is useful in many API designs.</tagline>
@@ -31,7 +31,7 @@
             <resource title='"Representing Problem Details in HTTP APIs: An Introduction to RFC 7807", YouTube, June 2021' href="https://www.youtube.com/watch?v=UNdUjBqsUqg"/>
         </additional>
     </video>
-    <video published="2022-02-05" slug="RFC-8288-Web-Linking">
+    <video slug="RFC-8288-Web-Linking">
         <title>Web Linking</title>
         <resource title='RFC 8288, "Web Linking", October 2017' href="https://datatracker.ietf.org/doc/html/rfc8288"/>
         <tagline>Supporting the representation of typed links in HTTP.</tagline>
@@ -41,7 +41,7 @@
             <resource title='"Handling Errors on the Web: Schrödinger&apos;s Links and how to handle them", YouTube, May 2021' href="https://www.youtube.com/watch?v=TpVsg2Nz_38"/>
         </additional>
     </video>
-    <video published="2022-03-14" slug="rfc-6573-Item-And-Collection-Link-Relations">
+    <video slug="rfc-6573-Item-And-Collection-Link-Relations">
         <title>Item and Collection Link Relations</title>
         <resource title='RFC 6573, "Item and Collection Link Relations", April 2012' href="https://datatracker.ietf.org/doc/html/rfc6573" />
         <tagline>Defines a pair of reciprocal link relation types that may be used to express the relationship between a collection and its members.</tagline>
