@@ -9,7 +9,7 @@
 - HTTP Range Requests
 - HTTP Caching
 - HTTP Authentication
-- HTTP Structured Headers
+- HTTP Structured Fields
 - HTTP SEARCH
 - HTTP/2
 - HTTP/3
