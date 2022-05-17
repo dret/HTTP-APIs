@@ -2,8 +2,8 @@
 title: Building Blocks for HTTP APIs
 email: erik.wilde@dret.net
 description: > # this means to ignore newlines until "baseurl:"
-  Use building blocks for your HTTP APIs;
-  Design and build better HTTP APIs.
+  Learn to design and build better HTTP APIs;
+  Use building blocks for your HTTP APIs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://httpapis.info" # the base hostname & protocol for your site
 twitter_username: dret
